@@ -1,0 +1,78 @@
+{
+  "threshold": 0.24,
+  "test_roc_auc": 0.9779,
+  "test_brier": 0.0505,
+  "test_sensitivity": 0.95,
+  "test_precision": 0.7917,
+  "test_specificity": 0.8718,
+  "confusion_matrix": [
+    [
+      68,
+      10
+    ],
+    [
+      2,
+      38
+    ]
+  ],
+  "n_train": 472,
+  "n_test": 118,
+  "subgroup_sensitivity": [
+    {
+      "group": "sex=F",
+      "n": 67,
+      "positives": 21,
+      "sensitivity": 0.905
+    },
+    {
+      "group": "sex=M",
+      "n": 51,
+      "positives": 19,
+      "sensitivity": 1.0
+    },
+    {
+      "group": "age <50",
+      "n": 29,
+      "positives": 1,
+      "sensitivity": 1.0
+    },
+    {
+      "group": "age 50-65",
+      "n": 48,
+      "positives": 13,
+      "sensitivity": 0.923
+    },
+    {
+      "group": "age >65",
+      "n": 41,
+      "positives": 26,
+      "sensitivity": 0.962
+    }
+  ],
+  "top_features_shap": [
+    [
+      "plasma_CA19_9",
+      0.1545
+    ],
+    [
+      "LYVE1",
+      0.0986
+    ],
+    [
+      "TFF1",
+      0.0601
+    ],
+    [
+      "REG1B",
+      0.0569
+    ],
+    [
+      "age",
+      0.0453
+    ],
+    [
+      "creatinine",
+      0.0244
+    ]
+  ]
+}
